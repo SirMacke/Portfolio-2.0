@@ -1,3 +1,7 @@
+// *
+//   background: #000 !important
+//   color: #0f0 !important
+//   outline: solid #f00 1px !important
 
 
 html
@@ -71,9 +75,17 @@ body
 
       #up
         position: relative
+        margin-bottom: 25px
+
+        @media(max-width: 1000px)
+          margin-bottom: 10px
 
       #down
         position: relative
+        margin-top: 25px
+
+        @media(max-width: 1000px)
+          margin-top: 10px
 
   #small-screen
     display: none
@@ -163,7 +175,7 @@ body
 
   section
     position: relative
-    width: 100vw
+    width: 100%
     height: 100vh
 
     #green-nav
@@ -177,7 +189,7 @@ body
 
     img
       position: fixed
-      width: 100vw
+      width: 100%
       height: 100vh
       object-fit: cover
       opacity: 0.5
@@ -199,19 +211,45 @@ body
         text-shadow: 0px 0px 25px black
         margin: 0
 
+        @media(max-width: 1000px)
+          font-size: 6.5em
+
+        @media(max-width: 850px)
+          font-size: 5.5em
+
+        @media(max-width: 700px)
+          font-size: 4.5em
+
+        @media(max-width: 550px)
+          font-size: 3.5em
+
+        @media(max-width: 450px)
+          font-size: 3em
+
+        @media(max-width: 400px)
+          font-size: 2.5em
+
       h3
         position: relative
-        top: 50px
+        top: 35px
         font-size: 2.5em
         text-align: center
         text-shadow: 0px 0px 25px black
         margin: 0
 
+        @media(max-width: 550px)
+          font-size: 2em
+          margin-bottom: 10px
+
+        @media(max-width: 400px)
+          font-size: 1.75em
+          margin-bottom: 10px
+
       a
         position: absolute
         left: 50%
         transform: translateX(-50%)
-        top: 425px
+        top: 125%
         font-size: 2em
         text-align: center
         text-shadow: 0px 0px 25px black
@@ -223,6 +261,17 @@ body
         color: white
         transition: 0.25s
         text-decoration: none
+
+        @media(max-width: 850px)
+          top: 130%
+
+        @media(max-width: 700px)
+          top: 135%
+
+        @media(max-width: 550px)
+          top: 140%
+          font-size: 1.75em
+          width: 175px
 
       a:hover
         font-size: 2.35em
@@ -237,28 +286,72 @@ body
   #about
     background-color: white
     box-shadow: 0px 0px 25px black
-    height: 65vh
+    height: auto
     color: black
     z-index: 1
 
     img
-      position: absolute
+      position: relative
       width: 400px
       height: 400px
       left: 20.25%
-      top: 50%
+      top: 100px
+      margin-bottom: 200px
       object-fit: cover
       object-position: 0% 50%
-      transform: rotate(-90deg) translateX(50%)
+      transform: rotate(-90deg)
       box-shadow: -5px 5px 15px black
+
+      @media(max-width: 1300px)
+        left: 57%
+        transform: rotate(-90deg) translateY(-50%)
+
+      @media(max-width: 600px)
+        width: 350px
+        height: 350px
+
+      @media(max-width: 550px)
+        width: 300px
+        height: 300px
+
+      @media(max-width: 450px)
+        width: 250px
+        height: 250px
 
     #text
       position: absolute
       width: 55%
-      height: 400px
+      height: auto
       left: 45%
-      top: 50%
-      transform: translateY(-50%)
+      top: 100px
+      padding-bottom: 40px
+
+      @media(max-width: 1800px)
+        left: 46.25%
+        width: 53.75%
+
+      @media(max-width: 1700px)
+        left: 47.5%
+        width: 52.5%
+
+      @media(max-width: 1600px)
+        left: 48.75%
+        width: 51.25%
+
+      @media(max-width: 1500px)
+        left: 52.5%
+        width: 47.5%
+
+      @media(max-width: 1400px)
+        left: 55%
+        width: 45%
+
+      @media(max-width: 1300px)
+        position: relative
+        left: 57%
+        width: 60%
+        transform: translateX(-50%)
+        top: -50px
 
       h1
         position: relative
@@ -266,11 +359,17 @@ body
         color: #228B22
         margin: 25px 0px 10px 10px
 
+        @media(max-width: 1300px)
+          text-align: center
+
       p
         position: relative
         font-size: 1.2em
-        margin: 25px 10px
+        margin: 25px 10px 0px 10px
         width: 80%
+
+        @media(max-width: 1300px)
+          width: 100%
 
   #project
     background: black
@@ -293,6 +392,10 @@ body
       letter-spacing: 2.5px
       text-shadow: 0px 0px 25px black
 
+      @media(max-width: 1300px)
+        left: 50%
+        transform: translateX(-50%)
+
     .div-image
       position: absolute
       box-shadow: 0px 0px 25px black
@@ -309,6 +412,24 @@ body
       width: 900px
       height: 575px
       transform: translate(-50%, -50%)
+
+      @media(max-width: 1920px)
+        width: 800px
+        height: 500px
+        top: 30%
+
+      @media(max-width: 1700px)
+        width: 700px
+        height: 450px
+
+      @media(max-width: 1500px)
+        width: 625px
+        height: 400px
+        top: 27.5%
+
+      @media(max-width: 1300px)
+        width: 80%
+        left: 50%
 
     #main2
       width: 350px
@@ -404,6 +525,10 @@ body
       @media(max-width: 1300px)
         left: 12.5%
 
+      @media(max-width: 700px)
+        left: 50%
+        transform: translateX(-50%)
+
     div
       position: absolute
       width: 82.5%
@@ -418,11 +543,24 @@ body
         left: 50%
         transform: translateX(-50%)
 
+      @media(max-width: 700px)
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(5, 1fr)
+
       i
         font-size: 7.5em
         margin: 25px
         text-shadow: 0px 0px 25px black
         text-align: center
+
+        @media(max-width: 1030px)
+          font-size: 6.5em
+
+        @media(max-width: 930px)
+          font-size: 5.5em
+
+        @media(max-width: 830px)
+          font-size: 4em
 
   #contact
     background-color: white
@@ -472,6 +610,18 @@ body
           padding: 10px
           border: 1px solid black
           resize: none
+
+          @media(max-width: 1600px)
+            width: 550px
+
+          @media(max-width: 1500px)
+            width: 450px
+
+          @media(max-width: 1400px)
+            width: 350px
+
+          @media(max-width: 1400px)
+            width: 250px
 
       #submit
         position: absolute
@@ -540,6 +690,11 @@ body
 
       @media(max-width: 1300px)
         left: 50%
+
+      @media(max-width: 700px)
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        height: 50%
 
       a
         color: white
