@@ -31,7 +31,7 @@ body
       flex-direction: column
       position: absolute
       left: 50%
-      top: 50%
+      top: 49%
       transform: translate(-50%, -50%)
 
       a:hover
@@ -138,6 +138,9 @@ body
         min-width: 160px
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
         z-index: 1
+
+        @media(max-width: 660px)
+          flex-direction: column
 
         a
           display: block
@@ -373,7 +376,7 @@ body
 
   #project
     background: black
-    height: 200vh
+    height: auto
 
     img
       position: absolute
@@ -387,18 +390,34 @@ body
       font-size: 7.5em
       width: auto
       margin: 0
-      left: 30%
-      top: 7.5%
+      left: 40%
+      top: 250px
+      transform: translateX(-50%)
       letter-spacing: 2.5px
       text-shadow: 0px 0px 25px black
 
       @media(max-width: 1300px)
         left: 50%
         transform: translateX(-50%)
+        top: 175px
+
+      @media(max-width: 800px)
+        top: 145px
+
+      @media(max-width: 700px)
+        top: 130px
+
+      @media(max-width: 550px)
+        font-size: 6.5em
+        top: 140px
+
+      @media(max-width: 450px)
+        font-size: 5em
 
     .div-image
-      position: absolute
+      position: relative
       box-shadow: 0px 0px 25px black
+      transform: translateX(-50%)
 
       img
         width: 100%
@@ -407,64 +426,329 @@ body
         opacity: 1
 
     #main1
-      left: 41%
-      top: 32.5%
-      width: 900px
-      height: 575px
-      transform: translate(-50%, -50%)
+      left: 40%
+      top: 500px
+      width: 1100px
+      height: 700px
 
-      @media(max-width: 1920px)
+      @media(max-width: 2300px)
+        width: 1000px
+        height: 625px
+
+      @media(max-width: 2200px)
+        width: 900px
+        height: 575px
+
+      @media(max-width: 2100px)
         width: 800px
-        height: 500px
-        top: 30%
+        height: 525px
 
-      @media(max-width: 1700px)
+      @media(max-width: 2000px)
         width: 700px
         height: 450px
+        margin-bottom: 100px
 
-      @media(max-width: 1500px)
-        width: 625px
-        height: 400px
-        top: 27.5%
+      @media(max-width: 1600px)
+        width: 600px
+        height: 375px
 
       @media(max-width: 1300px)
-        width: 80%
         left: 50%
+        width: 800px
+        height: 510px
+
+      @media(max-width: 900px)
+        width: 700px
+        height: 450px
+        top: 475px
+
+      @media(max-width: 800px)
+        width: 600px
+        height: 385px
+        top: 450px
+
+      @media(max-width: 700px)
+        width: 500px
+        height: 315px
+        top: 425px
+
+      @media(max-width: 550px)
+        width: 400px
+        height: 250px
+        top: 400px
+
+      @media(max-width: 450px)
+        width: 350px
+        height: 220px
+        top: 350px
+
+      @media(max-width: 350px)
+        width: 300px
+        height: 190px
+        top: 300px
 
     #main2
-      width: 350px
-      height: 900px
-      right: 10%
-      top: 25%
-      transform: translateY(-50%)
+      width: 400px
+      height: 1000px
+      left: 75%
+      top: -497.5px
+
+      @media(max-width: 2200px)
+        height: 900px
+        width: 350px
+        top: -397.5px
+
+      @media(max-width: 2000px)
+        height: 800px
+        width: 300px
+
+      @media(max-width: 1400px)
+        height: 700px
+        width: 250px
+        top: -297.5px
+
+      @media(max-width: 1300px)
+        display: none
+
+    #main3
+      display: none
+
+      @media(max-width: 1300px)
+        display: block
+        height: 600px
+        width: 400px
+        left: 30%
+        margin-top: 600px
+
+      @media(max-width: 1000px)
+        left: 27.5%
+
+      @media(max-width: 900px)
+        height: 500px
+        width: 350px
+
+      @media(max-width: 800px)
+        height: 400px
+        width: 300px
+        margin-top: 550px
+
+      @media(max-width: 700px)
+        height: 300px
+        width: 200px
+        margin-top: 500px
+
+      @media(max-width: 450px)
+        height: 250px
+        width: 150px
+        margin-top: 450px
+
+      @media(max-width: 350px)
+        height: 200px
+        width: 125px
+        margin-top: 400px
+
+    #main4
+      display: none
+
+      @media(max-width: 1300px)
+        display: block
+        height: 600px
+        width: 400px
+        left: 70%
+        margin-top: -600px
+        margin-bottom: 350px
+
+      @media(max-width: 1000px)
+        left: 72.5%
+
+      @media(max-width: 900px)
+        height: 500px
+        width: 350px
+        margin-top: -500px
+
+      @media(max-width: 800px)
+        height: 400px
+        width: 300px
+        margin-top: -400px
+
+      @media(max-width: 700px)
+        height: 300px
+        width: 200px
+        margin-top: -300px
+
+      @media(max-width: 450px)
+        height: 250px
+        width: 150px
+        margin-top: -250px
+
+      @media(max-width: 350px)
+        height: 200px
+        width: 125px
+        margin-top: -200px
+
 
     #plan1
-      width: 72.5%
-      height: 210px
-      top: 55%
-      left: 53.75%
-      transform: translate(-50%, -50%)
+      width: 1500px
+      height: 225px
+      top: -250px
+      left: 51%
+
+      @media(max-width: 1925px)
+        width: 1400px
+        height: 210px
+
+      @media(max-width: 1825px)
+        width: 1300px
+        height: 190px
+
+      @media(max-width: 1725px)
+        width: 1200px
+        height: 175px
+
+      @media(max-width: 1300px)
+        margin-top: 100px
+        left: 50%
+
+      @media(max-width: 1200px)
+        width: 1100px
+        height: 165px
+
+      @media(max-width: 1100px)
+        width: 1000px
+        height: 155px
+
+      @media(max-width: 1000px)
+        width: 900px
+        height: 140px
+
+      @media(max-width: 900px)
+        width: 800px
+        height: 125px
+
+      @media(max-width: 800px)
+        width: 700px
+        height: 110px
+
+      @media(max-width: 725px)
+        display: none
 
     #plan2
-      width: 72.5%
-      height: 210px
-      top: 70%
-      left: 53.75%
-      transform: translate(-50%, -50%)
+      width: 1500px
+      height: 225px
+      top: -100px
+      left: 51%
+
+      @media(max-width: 1925px)
+        width: 1400px
+        height: 210px
+
+      @media(max-width: 1825px)
+        width: 1300px
+        height: 190px
+
+      @media(max-width: 1725px)
+        width: 1200px
+        height: 175px
+
+      @media(max-width: 1300px)
+        margin-top: 0px
+        left: 50%
+
+      @media(max-width: 1200px)
+        width: 1100px
+        height: 165px
+
+      @media(max-width: 1100px)
+        width: 1000px
+        height: 155px
+
+      @media(max-width: 1000px)
+        width: 900px
+        height: 140px
+
+      @media(max-width: 900px)
+        width: 800px
+        height: 125px
+
+      @media(max-width: 800px)
+        width: 700px
+        height: 110px
+
+      @media(max-width: 725px)
+        display: none
 
     #customer1
-      width: 30%
-      height: 360px
-      top: 87.5%
-      left: 35.85%
-      transform: translate(-50%, -50%)
+      width: 700px
+      height: 450px
+      top: 100px
+      left: 35%
+
+      @media(max-width: 2200px)
+        left: 32.5%
+
+      @media(max-width: 1925px)
+        width: 600px
+        height: 375px
+
+      @media(max-width: 1700px)
+        width: 500px
+        height: 312.5px
+        top: 37.5px
+
+      @media(max-width: 1300px)
+        margin-top: 0px
+        left: 50%
+
+      @media(max-width: 725px)
+        margin-top: -275px
+
+      @media(max-width: 550px)
+        width: 400px
+        height: 250px
+
+      @media(max-width: 450px)
+        width: 350px
+        height: 220px
+
+      @media(max-width: 350px)
+        width: 300px
+        height: 190px
+
 
     #admin1
-      width: 30%
-      height: 360px
-      top: 87.5%
-      left: 71.70%
-      transform: translate(-50%, -50%)
+      width: 700px
+      height: 450px
+      top: -350px
+      left: 67.5%
+
+      @media(max-width: 2200px)
+        left: 70%
+
+      @media(max-width: 1925px)
+        width: 600px
+        height: 375px
+        top: -275px
+
+      @media(max-width: 1700px)
+        width: 500px
+        height: 312.5px
+
+      @media(max-width: 1300px)
+        margin-top: 400px
+        left: 50%
+        margin-bottom: -100px
+
+      @media(max-width: 550px)
+        width: 400px
+        height: 250px
+
+      @media(max-width: 450px)
+        width: 350px
+        height: 220px
+
+      @media(max-width: 350px)
+        width: 300px
+        height: 190px
 
 
   #design
@@ -472,40 +756,82 @@ body
     box-shadow: 0px 0px 25px black
     color: black
     z-index: 1
+    height: auto
 
     h1
-      position: absolute
+      position: relative
+      width: 425px
       left: 57.5%
-      top: 11%
+      top: 200px
       margin: 0
-      font-size: 6em
+      font-size: 7.5em
       transform: translateX(-50%)
       color: #228B22
+      text-align: center
+
+      @media(max-width: 800px)
+        font-size: 6.5em
+        top: 150px
+        width: 375px
+
+      @media(max-width: 700px)
+        font-size: 5.5em
+        top: 100px
+        width: 325px
+
+      @media(max-width: 600px)
+        font-size: 4.5em
+        top: 75px
+        width: 275px
+
+      @media(max-width: 450px)
+        font-size: 3.5em
+        top: 50px
+        width: 200px
 
     #grid
-      position: absolute
-      display: flex
+      position: relative
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: 1fr 1fr
       flex-direction: column
       width: 80%
       height: auto
       left: 17.5%
-      bottom: 15%
+      margin-top: 400px
+      padding-bottom: 200px
 
-      .row
+      @media(max-width: 1300px)
+        grid-template-rows: repeat(4, 1fr)
+        grid-template-columns: 1fr 1fr
+
+      @media(max-width: 800px)
+        margin-top: 300px
+
+      @media(max-width: 700px)
+        margin-top: 200px
+        padding-bottom: 150px
+
+      @media(max-width: 600px)
+        margin-top: 150px
+        padding-bottom: 100px
+
+      @media(max-width: 450px)
+        margin-top: 100px
+        padding-bottom: 50px
+
+
+      img
         position: relative
-        display: grid
-        grid-template-columns: repeat(4, 1fr)
-
-        img
-          position: relative
-          width: 95%
-          left: 50%
-          transform: translateX(-50%)
-          margin-top: 20px
-          box-shadow: 0px 0px 10px black
+        width: 95%
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: 20px
+        box-shadow: 0px 0px 10px black
 
   #skill
     background: black
+    height: auto
 
     img
       position: absolute
@@ -515,25 +841,49 @@ body
       opacity: 0.5
 
     h1
-      position: absolute
-      left: 17.5%
-      top: 35%
+      position: relative
+      width: 275px
+      left: 25%
+      top: 400px
       margin: 0
-      font-size: 6em
+      font-size: 7.5em
       text-shadow: 0px 0px 25px black
+      text-align: center
+      border: 1px solid red
 
       @media(max-width: 1300px)
         left: 12.5%
 
-      @media(max-width: 700px)
+      @media(max-width: 900px)
+        top: 300px
         left: 50%
         transform: translateX(-50%)
 
+      @media(max-width: 700px)
+        top: 200px
+
+      @media(max-width: 500px)
+        top: 150px
+
+      @media(max-width: 450px)
+        font-size: 6.5em
+        width: 250px
+
+      @media(max-width: 350px)
+        font-size: 5.5em
+        width: 200px
+        top: 100px
+
+      @media(max-width: 350px)
+        font-size: 4.5em
+        width: 175px
+
     div
-      position: absolute
+      position: relative
       width: 82.5%
       height: auto
-      bottom: 10%
+      margin-top: 600px
+      padding-bottom: 300px
       left: 17.5%
       display: grid
       grid-template-columns: repeat(5, 1fr)
@@ -543,9 +893,20 @@ body
         left: 50%
         transform: translateX(-50%)
 
-      @media(max-width: 700px)
+      @media(max-width: 900px)
         grid-template-columns: repeat(2, 1fr)
         grid-template-rows: repeat(5, 1fr)
+        padding-bottom: 200px
+        margin-top: 500px
+
+      @media(max-width: 700px)
+        margin-top: 400px
+
+      @media(max-width: 500px)
+        margin-top: 300px
+
+      @media(max-width: 350px)
+        margin-top: 200px
 
       i
         font-size: 7.5em
@@ -553,46 +914,90 @@ body
         text-shadow: 0px 0px 25px black
         text-align: center
 
-        @media(max-width: 1030px)
+        @media(max-width: 1050px)
           font-size: 6.5em
 
-        @media(max-width: 930px)
+        @media(max-width: 950px)
           font-size: 5.5em
 
-        @media(max-width: 830px)
+        @media(max-width: 900px)
+          font-size: 7.5em
+
+        @media(max-width: 500px)
+          font-size: 6.5em
+
+        @media(max-width: 400px)
+          font-size: 5em
+
+        @media(max-width: 325px)
           font-size: 4em
+
+        @media(max-width: 275px)
+          font-size: 3em
 
   #contact
     background-color: white
     box-shadow: 0px 0px 25px black
     color: black
     z-index: 1
-    height: 75vh
+    height: auto
+    margin-top: -70px
 
     h1
-      position: absolute
+      position: relative
       left: 22.5%
-      top: 5%
+      top: 150px
       font-size: 5em
       color: #228B22
+      width: 410px
+
+      @media(max-width: 900px)
+        left: 57.5%
+        transform: translateX(-50%)
+
+      @media(max-width: 600px)
+        font-size: 4em
+        width: 325px
+
+      @media(max-width: 600px)
+        font-size: 3em
+        width: 245px
+
+      @media(max-width: 375px)
+        font-size: 2.5em
+        width: 205px
 
     form
-      position: absolute
+      position: relative
       width: 55%
       height: 400px
       left: 22.5%
-      top: 50%
-      transform: translateY(-50%)
+      margin-top: 200px
+      padding-bottom: 250px
+
+      @media(max-width: 900px)
+        width: 300px
+        left: 57.5%
+        transform: translateX(-50%)
+
+      @media(max-width: 375px)
+        width: 200px
+
+      @media(max-width: 300px)
+        width: 160px
 
       .info-item
         position: relative
         font-size: 1.2em
-        margin: 25px 10px
-        width: 80%
+        margin: 25px 0px
+        width: 100%
 
         p
           position: relative
           font-weight: 600
+
+          @media(max-width: 900px)
+            text-align: center
 
         input
           position: relative
@@ -600,6 +1005,16 @@ body
           height: 40px
           padding: 0px 10px
           border: 1px solid black
+
+          @media(max-width: 900px)
+            left: 50%
+            transform: translateX(-50%)
+
+          @media(max-width: 375px)
+            width: 200px
+
+          @media(max-width: 300px)
+            width: 160px
 
         #message
           position: relative
@@ -611,20 +1026,30 @@ body
           border: 1px solid black
           resize: none
 
-          @media(max-width: 1600px)
+          @media(max-width: 1700px)
             width: 550px
 
-          @media(max-width: 1500px)
+          @media(max-width: 1600px)
             width: 450px
 
-          @media(max-width: 1400px)
+          @media(max-width: 1500px)
             width: 350px
 
           @media(max-width: 1400px)
             width: 250px
 
+          @media(max-width: 900px)
+            left: 50%
+            transform: translateX(-50%)
+
+          @media(max-width: 375px)
+            width: 200px
+
+          @media(max-width: 300px)
+            width: 160px
+
       #submit
-        position: absolute
+        position: relative
         width: auto
         height: auto
         font-size: 1.25em
@@ -635,6 +1060,10 @@ body
         background: none
         transition: 0.25s
         color: #228B22
+
+        @media(max-width: 900px)
+          left: 50%
+          transform: translateX(-62.5%)
 
       #submit:hover
         padding: 20px 30px
@@ -649,15 +1078,34 @@ body
       width: 550px
       max-width: 750px
       height: 400px
-      right: 5%
-      top: 59%
+      right: 150px
+      top: 55%
       object-fit: cover
       transform: rotate(-90deg) translateX(50%)
       box-shadow: -5px 5px 15px black
 
+      @media(max-width: 1500px)
+        right: 100px
+
+      @media(max-width: 1400px)
+        right: 50px
+
+      @media(max-width: 1300px)
+        width: 450px
+        height: 325px
+
+      @media(max-width: 1150px)
+        width: 340px
+        height: 250px
+        top: 58.5%
+
+      @media(max-width: 900px)
+        display: none
+
+
   #social-media
     background-color: black
-    height: 65vh
+    height: auto
 
     img
       position: absolute
@@ -667,29 +1115,37 @@ body
       opacity: 0.5
 
     h1
-      position: absolute
-      left: 52.5%
-      top: 17.5%
+      position: relative
+      left: 50%
+      top: 175px
       margin: 0
       font-size: 6em
       transform: translateX(-50%)
+      width: 650px
+      text-align: center
 
-      @media(max-width: 1300px)
-        width: 100%
-        text-align: center
-        left: 50%
+      @media(max-width: 650px)
+        font-size: 5em
+        width: 500px
+
+      @media(max-width: 500px)
+        font-size: 4.5em
+        width: 400px
+
+      @media(max-width: 400px)
+        width: auto
 
     div
-      position: absolute
+      position: relative
       width: 70%
       display: grid
       grid-template-columns: repeat(4, 1fr)
-      left: 52.5%
-      top: 50%
+      left: 50%
+      margin-top: 350px
       transform: translateX(-50%)
 
       @media(max-width: 1300px)
-        left: 50%
+        margin-top: 300px
 
       @media(max-width: 700px)
         grid-template-columns: repeat(2, 1fr)
@@ -699,6 +1155,10 @@ body
       a
         color: white
         text-align: center
+        margin-bottom: 200px
+
+        @media(max-width: 1300px)
+          margin-bottom: 100px
 
         i
           font-size: 6.5em
