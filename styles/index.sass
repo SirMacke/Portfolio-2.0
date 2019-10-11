@@ -3,7 +3,6 @@
 //   color: #0f0 !important
 //   outline: solid #f00 1px !important
 
-
 html
   scroll-behavior: smooth
 
@@ -19,7 +18,7 @@ body
   #large-screen
     position: fixed
     z-index: 2
-    height: 100vh
+    height: 100%
     width: 16%
     display: none
 
@@ -232,6 +231,9 @@ body
         @media(max-width: 400px)
           font-size: 2.5em
 
+        @media(max-width: 350px)
+          font-size: 2em
+
       h3
         position: relative
         top: 35px
@@ -246,7 +248,9 @@ body
 
         @media(max-width: 400px)
           font-size: 1.75em
-          margin-bottom: 10px
+
+        @media(max-width: 350px)
+          font-size: 1.5em
 
       a
         position: absolute
@@ -264,6 +268,7 @@ body
         color: white
         transition: 0.25s
         text-decoration: none
+        -webkit-tap-highlight-color: transparent
 
         @media(max-width: 850px)
           top: 130%
@@ -276,12 +281,27 @@ body
           font-size: 1.75em
           width: 175px
 
+        @media(max-width: 400px)
+          font-size: 1.5em
+          width: 150px
+
       a:hover
         font-size: 2.35em
         padding: 17.5px 27.5px
 
+        @media(max-width: 700px)
+          font-size: 2.25em
+
+        @media(max-width: 575px)
+          font-size: 2em
+
+        @media(max-width: 550px)
+          font-size: 1.8em
+
+        @media(max-width: 400px)
+          font-size: 1.6em
+
       a:active
-        outline: none
         font-size: 1.5em
         padding: 10px 20px
 
@@ -302,12 +322,11 @@ body
       margin-bottom: 200px
       object-fit: cover
       object-position: 0% 50%
-      transform: rotate(-90deg)
       box-shadow: -5px 5px 15px black
 
       @media(max-width: 1300px)
-        left: 57%
-        transform: rotate(-90deg) translateY(-50%)
+        left: 57.5%
+        transform: translateX(-50%)
 
       @media(max-width: 600px)
         width: 350px
@@ -321,11 +340,23 @@ body
         width: 250px
         height: 250px
 
+      @media(max-width: 400px)
+        width: 225px
+        height: 225px
+
+      @media(max-width: 350px)
+        width: 200px
+        height: 200px
+
+      @media(max-width: 300px)
+        width: 175px
+        height: 175px
+
     #text
       position: absolute
-      width: 55%
+      width: 50%
       height: auto
-      left: 45%
+      left: 50%
       top: 100px
       padding-bottom: 40px
 
@@ -360,15 +391,18 @@ body
         position: relative
         font-size: 3em
         color: #228B22
-        margin: 25px 0px 10px 10px
+        margin: 25px 0px 10px 0px
 
         @media(max-width: 1300px)
           text-align: center
 
+        @media(max-width: 350px)
+          font-size: 2.5em
+
       p
         position: relative
         font-size: 1.2em
-        margin: 25px 10px 0px 10px
+        margin: 25px 0px 0px 00px
         width: 80%
 
         @media(max-width: 1300px)
@@ -406,13 +440,21 @@ body
 
       @media(max-width: 700px)
         top: 130px
+        font-size: 7em
 
-      @media(max-width: 550px)
+      @media(max-width: 600px)
         font-size: 6.5em
-        top: 140px
 
-      @media(max-width: 450px)
-        font-size: 5em
+      @media(max-width: 500px)
+        top: 100px
+        font-size: 5.5em
+
+      @media(max-width: 400px)
+        font-size: 4.5em
+        top: 100px
+
+      @media(max-width: 300px)
+        font-size: 3.5em
 
     .div-image
       position: relative
@@ -465,27 +507,32 @@ body
       @media(max-width: 800px)
         width: 600px
         height: 385px
-        top: 450px
+        top: 425px
 
       @media(max-width: 700px)
         width: 500px
         height: 315px
-        top: 425px
+        top: 375px
 
       @media(max-width: 550px)
         width: 400px
         height: 250px
-        top: 400px
+
+      @media(max-width: 500px)
+        top: 300px
 
       @media(max-width: 450px)
         width: 350px
         height: 220px
-        top: 350px
 
-      @media(max-width: 350px)
+      @media(max-width: 400px)
         width: 300px
         height: 190px
-        top: 300px
+        top: 275px
+
+      @media(max-width: 350px)
+        width: 250px
+        height: 160px
 
     #main2
       width: 400px
@@ -545,7 +592,7 @@ body
       @media(max-width: 350px)
         height: 200px
         width: 125px
-        margin-top: 400px
+        margin-top: 350px
 
     #main4
       display: none
@@ -585,6 +632,7 @@ body
         height: 200px
         width: 125px
         margin-top: -200px
+        margin-bottom: 300px
 
 
     #plan1
@@ -711,8 +759,8 @@ body
         height: 220px
 
       @media(max-width: 350px)
-        width: 300px
-        height: 190px
+        width: 250px
+        height: 160px
 
 
     #admin1
@@ -747,8 +795,9 @@ body
         height: 220px
 
       @media(max-width: 350px)
-        width: 300px
-        height: 190px
+        width: 250px
+        height: 160px
+        margin-bottom: -175px
 
 
   #design
@@ -849,33 +898,33 @@ body
       font-size: 7.5em
       text-shadow: 0px 0px 25px black
       text-align: center
-      border: 1px solid red
 
       @media(max-width: 1300px)
         left: 12.5%
 
       @media(max-width: 900px)
-        top: 300px
+        top: 200px
         left: 50%
         transform: translateX(-50%)
 
       @media(max-width: 700px)
-        top: 200px
-
-      @media(max-width: 500px)
         top: 150px
 
-      @media(max-width: 450px)
+      @media(max-width: 600px)
         font-size: 6.5em
+
+      @media(max-width: 500px)
+        top: 100px
+        font-size: 5.5em
         width: 250px
 
-      @media(max-width: 350px)
-        font-size: 5.5em
+      @media(max-width: 400px)
+        font-size: 4.5em
         width: 200px
         top: 100px
 
-      @media(max-width: 350px)
-        font-size: 4.5em
+      @media(max-width: 300px)
+        font-size: 3.5em
         width: 175px
 
     div
@@ -884,7 +933,7 @@ body
       height: auto
       margin-top: 600px
       padding-bottom: 300px
-      left: 17.5%
+      left: 16%
       display: grid
       grid-template-columns: repeat(5, 1fr)
       grid-template-rows: repeat(2, 1fr)
@@ -897,16 +946,16 @@ body
         grid-template-columns: repeat(2, 1fr)
         grid-template-rows: repeat(5, 1fr)
         padding-bottom: 200px
-        margin-top: 500px
-
-      @media(max-width: 700px)
         margin-top: 400px
 
-      @media(max-width: 500px)
+      @media(max-width: 700px)
         margin-top: 300px
 
-      @media(max-width: 350px)
+      @media(max-width: 500px)
         margin-top: 200px
+
+      @media(max-width: 400px)
+        margin-top: 150px
 
       i
         font-size: 7.5em
@@ -921,16 +970,16 @@ body
           font-size: 5.5em
 
         @media(max-width: 900px)
-          font-size: 7.5em
+          font-size: 7em
 
         @media(max-width: 500px)
-          font-size: 6.5em
+          font-size: 5.5em
 
         @media(max-width: 400px)
-          font-size: 5em
+          font-size: 4.5em
 
         @media(max-width: 325px)
-          font-size: 4em
+          font-size: 3.5em
 
         @media(max-width: 275px)
           font-size: 3em
@@ -1060,6 +1109,9 @@ body
         background: none
         transition: 0.25s
         color: #228B22
+        -webkit-tap-highlight-color: transparent
+        outline: none
+        -moz-outline-style: none
 
         @media(max-width: 900px)
           left: 50%
@@ -1068,36 +1120,39 @@ body
       #submit:hover
         padding: 20px 30px
         cursor: pointer
+        outline: none
+        -moz-outline-style: none
 
       #submit:active
         padding: 10px 20px
         outline: none
+        -moz-outline-style: none
 
     img
       position: absolute
-      width: 550px
-      max-width: 750px
-      height: 400px
-      right: 150px
-      top: 55%
+      width: 500px
+      height: 600px
+      right: 100px
+      top: 50%
       object-fit: cover
-      transform: rotate(-90deg) translateX(50%)
+      object-position: bottom
+      transform: translateY(-50%)
       box-shadow: -5px 5px 15px black
 
-      @media(max-width: 1500px)
-        right: 100px
-
       @media(max-width: 1400px)
-        right: 50px
+        width: 400px
+        height: 500px
 
       @media(max-width: 1300px)
-        width: 450px
-        height: 325px
+        width: 325px
+        height: 400px
+        top: 55%
+        object-position: 0% 75%
 
       @media(max-width: 1150px)
-        width: 340px
-        height: 250px
-        top: 58.5%
+        width: 250px
+        height: 340px
+        top: 53.75%
 
       @media(max-width: 900px)
         display: none
@@ -1132,8 +1187,17 @@ body
         font-size: 4.5em
         width: 400px
 
+      @media(max-width: 450px)
+        font-size: 4em
+        width: 350px
+
       @media(max-width: 400px)
-        width: auto
+        width: 290px
+
+      @media(max-width: 300px)
+        font-size: 3.5em
+        width: 250px
+
 
     div
       position: relative
@@ -1152,10 +1216,20 @@ body
         grid-template-rows: repeat(2, 1fr)
         height: 50%
 
+      @media(max-width: 400px)
+        width: 75%
+
+      @media(max-width: 350px)
+        width: 80%
+
+      @media(max-width: 300px)
+        width: 85%
+
       a
         color: white
         text-align: center
         margin-bottom: 200px
+        height: 100px
 
         @media(max-width: 1300px)
           margin-bottom: 100px
