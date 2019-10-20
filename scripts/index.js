@@ -17,3 +17,9 @@ function page(num, page) {
 function page2(num) {
   window.location.href = `#${sides[num]}`;
 }
+
+function showPopUp() {
+  setTimeout(function(){
+    document.getElementById('pop-up').style.display = 'flex';
+  }, 1000)
+}

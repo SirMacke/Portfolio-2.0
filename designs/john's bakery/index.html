@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <script src="https://kit.fontawesome.com/c7caeb49e9.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/index.min.css">
+    <title>John's Bakery</title>
+  </head>
+  <body>
+    <nav id="large-screen">
+      <div id="black-nav"></div>
+      <a id="name" href="#home">John's Bakery</a>
+      <div id="links">
+        <a href="#home">Home</a>
+        <a href="#service">Service</a>
+        <a href="#about">About</a>
+        <a href="#bread">Bread</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <nav id="small-screen">
+      <div id="black-nav"></div>
+      <a id="name" href="#home">John's Bakery</a>
+      <div id="dropdown">
+        <button type="button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div id="dropdown-content">
+          <a onclick="window.location.href='#home'" >
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+          <a onclick="window.location.href='#service'">
+            <i class="fas fa-cookie-bite"></i>
+            <p>Service</p>
+          </a>
+          <a onclick="window.location.href='#about'">
+            <i class="fas fa-user"></i>
+            <p>About</p>
+          </a>
+          <a onclick="window.location.href='#bread'">
+            <i class="fas fa-bread-slice"></i>
+            <p>Bread</p>
+          </a>
+          <a onclick="window.location.href='#contact'">
+            <i class="fas fa-envelope"></i>
+            <p>Contact</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <img src="./images/bread-min.jpg" alt="Lots of bread">
+      <h1>Your Daily Bread</h1>
+      <h3>Todays Special: Pretzel</h3>
+      <div id="down" onclick="window.location.href='#service'">
+        <i class="fas fa-chevron-down" id="small"></i>
+        <i class="fas fa-chevron-down" id="big"></i>
+      </div>
+      <div id="social-media">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </section>
+    <section id="service">
+      <h1>Our Service</h1>
+      <div id="container">
+        <div class="stages">
+          <img src="./images/bake-min.jpg" alt="Baking bread">
+          <h1>Bake</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. In egestas erat imperdiet sed euismod. Mollis aliquam ut porttitor leo a diam.</p>
+        </div>
+        <div class="stages">
+          <img src="./images/pick-up-min.jpg" alt="Bakery">
+          <h1>Pick-up</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. In egestas erat imperdiet sed euismod. Mollis aliquam ut porttitor leo a diam.</p>
+        </div>
+        <div class="stages">
+          <img src="./images/eat-min.jpg" alt="Breakfast">
+          <h1>Eat</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. In egestas erat imperdiet sed euismod. Mollis aliquam ut porttitor leo a diam.</p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <img src="./images/about-min.jpg" alt="Baking Bread">
+      <h1>About Us</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A scelerisque purus semper eget duis at tellus. Vitae ultricies leo integer malesuada nunc vel. Elementum nisi quis eleifend quam adipiscing. Nisl pretium fusce id velit ut. Sapien pellentesque habitant morbi tristique et malesuada. Vitae turpis massa sed elementum tempus egestas sed sed.</p>
+    </section>
+    <section id="bread">
+      <h1>Our Bread Collection</h1>
+      <div id="container">
+        <div class="bread">
+          <img src="./images/rolls-min.jpg" alt="Bread type">
+          <h1>Rolls</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit. Donec et odio pellentesque diam volutpat commodo. Quam vulputate dignissim suspendisse in.</p>
+        </div>
+        <div class="bread">
+          <img src="./images/challah-min.jpg" alt="Bread type">
+          <h1>Challah</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit. Donec et odio pellentesque diam volutpat commodo. Quam vulputate dignissim suspendisse in.</p>
+        </div>
+        <div class="bread">
+          <img src="./images/french bread-min.jpg" alt="Bread type">
+          <h1>French Bread</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit. Donec et odio pellentesque diam volutpat commodo. Quam vulputate dignissim suspendisse in.</p>
+        </div>
+        <div class="bread">
+          <img src="./images/croissant-min.jpg" alt="Bread type">
+          <h1>Croissant</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit. Donec et odio pellentesque diam volutpat commodo. Quam vulputate dignissim suspendisse in.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <img src="./images/contact-min.jpg" alt="A lot of bread">
+      <h1>Contact Us</h1>
+      <div id="container">
+        <div class="info">
+          <h3>Call</h3>
+          <p>(566) 893-7742</p>
+        </div>
+        <div class="info">
+          <h3>Email</h3>
+          <p>service@johnsbakery.com</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h1>John's Bakery</h1>
+      <div id="social-media">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./scripts/index.js"></script>
+</html>

@@ -12,6 +12,7 @@
       gtag('config', 'UA-139231141-1');
     </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="height=device-height, initial-scale=1">
     <script src="https://kit.fontawesome.com/c7caeb49e9.js"></script>
@@ -100,11 +101,11 @@
       <img src="./images/me.jpg" alt="Portrait image">
       <div id="text">
         <h1>About me</h1>
-        <p>My name is Maximilian, but you can call me Max. I'm a 14 year old fullstack web developer from Sweden. You should check out some of my work!</p>
+        <p>My name is Maximilian, but you can call me Max. I'm a fullstack web developer from Sweden. You should check out some of my work!</p>
 
         <p>I can design and develope any type of website or webapp. For the client side I'll use HTML, Pug, CSS, Sass and JavaScript and for the server side I'll use NodeJS, Express and MongoDB. With these skills I'm able to build any type of website for your needs.</p>
 
-        <p>My life goal is to become a successful person by helping others with there problems. Either it is by developing there website or people having it hard surviving there daily lives.</p>
+        <p>My life goal is to become a successful person by helping others with their problems. Either it is by developing their website or people having it hard surviving their daily lives.</p>
       </div>
     </section>
     <section id="project">
@@ -139,14 +140,30 @@
       <div id="green-nav"></div>
       <h1>Designs</h1>
       <div id="grid">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
-        <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        <a href="./designs/discover/index.html">
+          <img src="./images/discover.jpg" alt="Discover design example">
+        </a>
+        <a href="./designs/john's bakery/index.html">
+          <img src="./images/john's bakery.jpg" alt="John's Bakery design example">
+        </a>
+        <a href="">
+          <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        </a>
+        <a href="">
+          <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        </a>
+        <a href="">
+          <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        </a>
+        <a href="">
+          <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        </a>
+        <a href="">
+          <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        </a>
+        <a href="">
+          <img src="./images/portfolio-main-1.jpg" alt="Pcofthegod home page">
+        </a>
       </div>
     </section>
     <section id="skill">
@@ -182,7 +199,11 @@
           <p>Message</p>
           <textarea name="message" placeholder="Lets chat!" id="message"></textarea>
         </div>
-        <input type="submit" value="Send message" id="submit">
+        <input type="submit" value="Send message" id="submit" onclick="showPopUp()">
+        <div id="pop-up">
+          <i class="fas fa-info"></i>
+          <p>If a mail window doens't pop up on your device, then send an email with your message to max@maximilianh.com</p>
+        </div>
       </form>
       <img src="./images/me.jpg" alt="Portrait image">
     </section>

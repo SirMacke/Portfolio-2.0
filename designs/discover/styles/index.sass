@@ -1,0 +1,1008 @@
+// *
+//   outline: solid #f00 1px !important
+//   background: #000 !important
+//   color: #0f0 !important
+
+html
+  scroll-behavior: smooth
+  font-family: 'Barlow', sans-serif
+  color: white
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 0px
+  overflow-x: hidden
+
+  body
+    width: 100%
+    height: 100%
+    margin: 0px
+    padding: 0px
+    overflow-x: hidden
+    -webkit-tap-highlight-color: transparent
+    scroll-behavior: smooth
+
+    nav
+      position: fixed
+      width: 100vw
+      height: 150px
+      z-index: 3
+
+      #dropdown
+        overflow: hidden
+
+        button
+          position: absolute
+          left: 5%
+          top: 50%
+          transform: translateY(-50%)
+          width: 50px
+          height: 50px
+          background: none
+          border: none
+          z-index: 1
+
+          @media(max-width: 1700px)
+            left: 6.25%
+
+          @media(max-width: 1450px)
+            left: 6%
+
+          @media(max-width: 1300px)
+            left: 5.75%
+
+          @media(max-width: 1150px)
+            left: 5.5%
+
+          @media(max-width: 250px)
+            left: 3.5%
+
+          .line
+            position: absolute
+            height: 5px
+            background-color: white
+            border-radius: 2.5px
+            transition: 0.25s
+
+          #long
+            top: 12.5px
+            width: 40px
+
+            @media(max-width: 350px)
+              width: 35px
+
+          #short
+            top: 27.5px
+            width: 30px
+
+            @media(max-width: 350px)
+              width: 25px
+
+        button:focus
+          outline: none
+
+        button:hover
+          cursor: pointer
+
+        #content-opacity
+          display: none
+          position: fixed
+          width: 12.5%
+          height: 100%
+          background-color: black
+          opacity: 0.25
+
+          @media(max-width: 1700px)
+            width: 15%
+
+          @media(max-width: 1150px)
+            height: 600px
+            width: 300px
+            opacity: 0.75
+
+          @media(max-width: 300px)
+            width: 100%
+
+        #content
+          display: none
+          flex-direction: column
+          position: fixed
+          width: 12.5%
+          height: auto
+          top: 50%
+          transform: translateY(-50%)
+          z-index: 1
+
+          @media(max-width: 1700px)
+            width: 15%
+
+          @media(max-width: 1150px)
+            height: 600px
+            width: 300px
+            top: 150px
+            transform: translateY(0%)
+
+          @media(max-width: 300px)
+            width: 100%
+
+          a
+            position: relative
+            text-align: center
+            color: white
+            text-decoration: none
+
+            p
+              color: white
+              font-size: 1.5em
+
+          a:hover
+            text-decoration: underline
+
+      h1
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        margin: 0px
+        text-align: center
+        font-size: 3em
+        font-family: 'Kalam', cursive
+        width: 200px
+
+        @media(max-width: 500px)
+          font-size: 2.5em
+
+        @media(max-width: 350px)
+          font-size: 2em
+
+      #social-media
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        display: flex
+        flex-direction: row
+
+        @media(max-width: 800px)
+          flex-direction: column
+          top: 90%
+
+        @media(max-width: 250px)
+          right: 2.5%
+
+        a
+          color: white
+          margin-left: 25px
+          height: 50px
+          width: 50px
+
+          @media(max-width: 800px)
+            margin-top: 25px
+
+          i
+            position: relative
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            font-size: 3em
+            transition: 0.25s
+
+            @media(max-width: 500px)
+              font-size: 2.5em
+
+            @media(max-width: 350px)
+              font-size: 2em
+
+          i:hover
+            font-size: 3.5em
+
+          i:active
+            font-size: 2.5em
+
+    section
+      position: relative
+      width: 100%
+      height: auto
+      margin: 0px
+      background-color: black
+
+    #home
+      height: 100vh
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        opacity: 0.75
+        box-shadow: inline 0px 0px 25px white
+
+      #main
+        position: absolute
+        left: 16.5%
+        top: 46.5%
+        transform: translateY(-50%)
+        width: auto
+        height: auto
+
+        @media(max-width: 600px)
+          left: 10%
+
+        @media(max-width: 350px)
+          left: 50%
+          transform: translate(-50%, -50%)
+
+        h1
+          font-size: 7.5em
+          font-weight: 600
+          letter-spacing: 10px
+          padding: 0px
+          margin: 50px 0px 0px 0px
+          text-transform: uppercase
+
+          @media(max-width: 1000px)
+            font-size: 6.5em
+
+          @media(max-width: 900px)
+            font-size: 5em
+
+          @media(max-width: 750px)
+            font-size: 4em
+
+          @media(max-width: 600px)
+            font-size: 3em
+
+          @media(max-width: 500px)
+            font-size: 2.5em
+
+          @media(max-width: 400px)
+            font-size: 2.25em
+
+          @media(max-width: 350px)
+            font-size: 2em
+            text-align: center
+
+          @media(max-width: 300px)
+            font-size: 1.5em
+
+        h2
+          font-size: 7.5em
+          font-weight: 200
+          letter-spacing: 10px
+          padding: 0px
+          margin: 0px 0px 0px 0px
+          text-transform: uppercase
+
+          @media(max-width: 1000px)
+            font-size: 6.5em
+
+          @media(max-width: 900px)
+            font-size: 5em
+
+          @media(max-width: 750px)
+            font-size: 4em
+
+          @media(max-width: 600px)
+            font-size: 3em
+
+          @media(max-width: 500px)
+            font-size: 2.5em
+
+          @media(max-width: 400px)
+            font-size: 2.25em
+
+          @media(max-width: 350px)
+            font-size: 2em
+            text-align: center
+
+          @media(max-width: 300px)
+            font-size: 1.5em
+
+        #book-now
+          position: absolute
+          background: none
+          border: 2.5px solid white
+          border-radius: 50px
+          color: white
+          font-size: 1.75em
+          padding: 15px 30px
+          margin: 50px 0px 0px 0px
+          left: 115px
+          transform: translateX(-50%)
+          transition: 0.25s
+
+          @media(max-width: 750px)
+            font-size: 1.5em
+            padding: 12.5px 25px
+            margin: 25px 0px 0px 0px
+            left: 90px
+
+          @media(max-width: 600px)
+            font-size: 1.25em
+            padding: 10px 20px
+            margin: 25px 0px 0px 0px
+            left: 75px
+
+          @media(max-width: 350px)
+            left: 50%
+            font-size: 1em
+            padding: 7.5px 15px
+
+        #book-now:focus
+          outline: none
+
+        #book-now:hover
+          font-size: 2em
+          padding: 17.5px 35px
+          cursor: pointer
+
+          @media(max-width: 750px)
+            font-size: 1.75em
+            padding: 15px 30px
+
+          @media(max-width: 600px)
+            font-size: 1.5em
+            padding: 12.5px 25px
+
+          @media(max-width: 350px)
+            font-size: 1.25em
+            padding: 10px 20px
+
+        #book-now:active
+          font-size: 1.5em
+          padding: 12.5px 25px
+
+          @media(max-width: 750px)
+            font-size: 1.25em
+            padding: 10px 20px
+
+          @media(max-width: 600px)
+            font-size: 1em
+
+          @media(max-width: 350px)
+            font-size: 0.75em
+            padding: 7.5px 15px
+
+        #video
+          position: absolute
+          top: 130px
+          left: 140%
+          transform: translate(-50%, -50%)
+          width: 100px
+          height: 100px
+          background: none
+          border: 5px solid white
+          border-radius: 50px
+          transition: 0.25s
+
+          @media(max-width: 1550px)
+            left: 130%
+
+          @media(max-width: 1450px)
+            left: 120%
+
+          @media(max-width: 1350px)
+            top: 425px
+            left: 110%
+
+          @media(max-width: 1250px)
+            left: 100%
+
+          @media(max-width: 1150px)
+            left: 90%
+
+          @media(max-width: 1050px)
+            left: 80%
+
+          @media(max-width: 1000px)
+            top: 385px
+
+          @media(max-width: 900px)
+            top: 325px
+
+          @media(max-width: 800px)
+            left: 50%
+            transform: translateX(-50%)
+            top: 550px
+
+          i
+            position: absolute
+            left: 55%
+            top: 50%
+            transform: translate(-50%, -50%)
+            font-size: 5em
+            color: white
+
+        #video:focus
+          outline: none
+
+        #video:hover
+          font-size: 1.01em
+          cursor: pointer
+          width: 110px
+          height: 110px
+          border-radius: 100px
+
+        #video:active
+          font-size: 0.75em
+          width: 90px
+          height: 90px
+          border-radius: 45px
+
+      #scroll
+        position: absolute
+        display: flex
+        flex-direction: row
+        left: 50%
+        top: 92.5%
+        transform: translateX(-50%)
+        width: auto
+        height: auto
+        color: white
+        text-decoration: none
+
+        p
+          font-size: 1.5em
+          font-weight: 400
+          margin: 0px
+          width: 125px
+
+        i
+          font-size: 1.5em
+          margin: 5px 0px 0px 10px
+
+
+    #about
+      z-index: 2
+      box-shadow: 0px 0px 25px black
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: bottom
+        opacity: 0.5
+
+      div
+        position: relative
+        top: 175px
+        left: 50%
+        transform: translateX(-50%)
+        width: 50%
+        padding-bottom: 400px
+
+        @media(max-width: 650px)
+          width: 75%
+
+        h1
+          font-size: 5em
+          text-align: center
+          margin: 0px
+
+          @media(max-width: 650px)
+            font-size: 4em
+
+          @media(max-width: 400px)
+            font-size: 3em
+
+        p
+          font-size: 2em
+          text-align: center
+
+          @media(max-width: 650px)
+            font-size: 1.75em
+
+    #how-it-works
+      z-index: 1
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: bottom
+        opacity: 0.65
+
+      h1
+        position: absolute
+        right: 150px
+        top: 200px
+        margin: 0px
+        font-size: 6.5em
+        text-shadow: 0px 0px 25px black
+
+        @media(max-width: 1250px)
+          font-size: 5.5em
+          right: 100px
+
+        @media(max-width: 1050px)
+          font-size: 4.5em
+
+        @media(max-width: 900px)
+          font-size: 3.5em
+
+        @media(max-width: 725px)
+          left: 50%
+          transform: translateX(-50%)
+          font-size: 4.5em
+          width: 500px
+          text-align: center
+          top: 150px
+
+        @media(max-width: 525px)
+          font-size: 3.5em
+          width: 350px
+
+        @media(max-width: 400px)
+          font-size: 3em
+          width: 300px
+
+        @media(max-width: 325px)
+          font-size: 2.5em
+          width: 250px
+
+        @media(max-width: 250px)
+          font-size: 2em
+          width: 200px
+
+
+      #stages
+        position: relative
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        width: 90%
+        left: 50%
+        transform: translateX(-50%)
+
+        @media(max-width: 725px)
+          grid-template-columns: 100%
+          grid-template-rows: repeat(3, 1fr)
+          top: 400px
+          padding-bottom: 400px
+
+        .stage
+          padding-bottom: 175px
+
+          h1
+            position: relative
+            top: 0px
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 4em
+            text-align: center
+            text-shadow: 0px 0px 25px black
+
+            @media(max-width: 1250px)
+              font-size: 3em
+
+            @media(max-width: 900px)
+              font-size: 2.5em
+
+            @media(max-width: 400px)
+              font-size: 2.25em
+              width: 200px
+
+            @media(max-width: 250px)
+              font-size: 1.75em
+              width: 175px
+
+          p
+            position: relative
+            font-size: 1.35em
+            left: 50%
+            transform: translateX(-50%)
+            width: 80%
+            text-align: center
+            text-shadow: 0px 0px 25px black
+
+            @media(max-width: 1250px)
+              font-size: 1.25em
+
+        #first
+          margin-top: 200px
+
+          @media(max-width: 725px)
+            margin-top: -75px
+
+        #second
+          margin-top: 400px
+
+          @media(max-width: 725px)
+            margin-top: -75px
+
+        #third
+          margin-top: 600px
+
+          @media(max-width: 725px)
+            margin-top: -75px
+
+
+    #prices
+      box-shadow: 0px 0px 25px black
+      z-index: 2
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: bottom
+        opacity: 0.8
+
+      h1
+        position: relative
+        top: 190px
+        left: 50%
+        transform: translateX(-50%)
+        text-align: center
+        font-size: 6.5em
+        margin: 0px
+
+        @media(max-width: 875px)
+          top: 100px
+
+        @media(max-width: 500px)
+          font-size: 5em
+
+        @media(max-width: 350px)
+          font-size: 4em
+
+      #price-categories
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        position: relative
+        margin-top: 275px
+        left: 50%
+        transform: translateX(-50%)
+        padding-bottom: 250px
+
+        @media(max-width: 875px)
+          grid-template-columns: 100%
+          grid-template-rows: repeat(3, 1fr)
+          margin-top: 225px
+          padding-bottom: 100px
+
+        @media(max-width: 500px)
+          margin-top: 200px
+
+        .option
+          display: flex
+          flex-direction: column
+          position: relative
+          width: 75%
+          left: 50%
+          transform: translateX(-50%)
+          box-shadow: 0px 0px 25px black
+
+          @media(max-width: 1250px)
+            width: 90%
+
+          @media(max-width: 875px)
+            width: 60%
+            margin-bottom: 100px
+
+          @media(max-width: 500px)
+            width: 80%
+
+          h1
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 3em
+            margin: 25px 0px 25px 0px
+            text-align: center
+            top: 0px
+            width: 75%
+            text-shadow: 0px 0px 25px black
+
+            @media(max-width: 1050px)
+              font-size: 2.5em
+
+            @media(max-width: 300px)
+              font-size: 2em
+
+          p
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            border-top: 1px solid grey
+            font-size: 1.25em
+            text-align: center
+            width: 70%
+            padding: 25px 0px
+            margin: 0px
+            text-shadow: 0px 0px 25px black
+
+          h2
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 2.5em
+            border-top: 1px solid grey
+            text-align: center
+            width: 70%
+            padding: 25px 0px
+            margin: 0px 0px 10px 0px
+            text-shadow: 0px 0px 25px black
+
+
+    #reviews
+      z-index: 1
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: bottom
+        opacity: 0.75
+
+      h1
+        position: absolute
+        left: 250px
+        top: 200px
+        margin: 0px
+        font-size: 6.5em
+        text-shadow: 0px 0px 25px black
+
+        @media(max-width: 1150px)
+          font-size: 5.5em
+          left: 200px
+
+        @media(max-width: 1050px)
+          font-size: 4.5em
+          left: 150px
+
+        @media(max-width: 925px)
+          left: 50%
+          transform: translateX(-50%)
+          top: 150px
+          font-size: 6.5em
+
+        @media(max-width: 500px)
+          font-size: 5em
+
+        @media(max-width: 400px)
+          font-size: 4em
+          top: 125px
+
+        @media(max-width: 350px)
+          font-size: 3.5em
+
+        @media(max-width: 300px)
+          font-size: 3em
+
+      #container
+        position: relative
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        width: 80%
+        left: 50%
+        transform: translateX(-50%)
+
+        @media(max-width: 925px)
+          grid-template-columns: 100%
+          grid-template-rows: repeat(3, 1fr)
+          top: 375px
+          margin-left: 100px
+          padding-bottom: 500px
+
+        @media(max-width: 600px)
+          margin-left: 75px
+
+        @media(max-width: 500px)
+          top: 350px
+
+        @media(max-width: 450px)
+          width: 70%
+
+        @media(max-width: 400px)
+          top: 275px
+          margin-left: 0px
+          transform: translateX(-50%)
+
+        @media(max-width: 300px)
+          top: 250px
+
+        .review
+          padding-bottom: 150px
+
+          @media(max-width: 925px)
+            position: relative
+            padding-bottom: 0px
+
+          @media(max-width: 400px)
+            left: 50%
+            transform: translateX(-45.5%)
+
+          .text
+            border: 2.5px solid white
+            border-radius: 10px
+            height: auto
+
+            @media(max-width: 925px)
+              width: 80%
+
+            @media(max-width: 400px)
+              width: 90%
+
+            h1
+              position: relative
+              top: 15px
+              left: 25px
+              font-size: 2em
+              text-shadow: 0px 0px 25px black
+              margin-bottom: 25px
+              width: 80%
+
+              @media(max-width: 925px)
+                transform: translateX(0%)
+
+              @media(max-width: 450px)
+                font-size: 1.5em
+
+            p
+              position: relative
+              font-size: 1.35em
+              left: 25px
+              width: 90%
+              text-shadow: 0px 0px 25px black
+              margin-bottom: -10px
+
+              @media(max-width: 925px)
+                width: 85%
+
+              @media(max-width: 400px)
+                padding-bottom: 25px
+
+            #right
+              position: relative
+              left: 100%
+              top: -130px
+              font-size: 2.25em
+
+              @media(max-width: 925px)
+                display: none
+
+            #left
+              position: relative
+              left: -15px
+              top: -130px
+              font-size: 2.25em
+              display: none
+
+              @media(max-width: 925px)
+                display: block
+
+              @media(max-width: 400px)
+                display: none
+
+          img
+            position: relative
+            width: 70px
+            height: 70px
+            border-radius: 50px
+            left: 107.5%
+            top: -183.5px
+
+            @media(max-width: 925px)
+              left: -100px
+
+            @media(max-width: 400px)
+              display: none
+
+        #first
+          margin-top: 725px
+
+          @media(max-width: 1450px)
+            margin-top: 925px
+
+          @media(max-width: 925px)
+            margin-top: 50px
+
+        #second
+          margin-top: 475px
+
+          @media(max-width: 1450px)
+            margin-top: 575px
+
+          @media(max-width: 925px)
+            margin-top: 50px
+
+        #third
+          margin-top: 225px
+
+          @media(max-width: 925px)
+            margin-top: 50px
+
+
+    footer
+      position: relative
+      width: 100%
+      height: auto
+      margin: 0px
+      background-color: #202020
+      box-shadow: 0px 0px 25px black
+
+      #info
+        position: relative
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        top: 50px
+        left: 50%
+        transform: translateX(-50%)
+        width: 50%
+
+        @media(max-width: 1825px)
+          width: 60%
+
+        @media(max-width: 1525px)
+          width: 70%
+
+        @media(max-width: 1300px)
+          width: 80%
+
+        @media(max-width: 1150px)
+          width: 90%
+
+        @media(max-width: 900px)
+          width: 95%
+
+        @media(max-width: 650px)
+          grid-template-columns: 100%
+          grid-template-rows: repeat(4, 1fr)
+          padding-bottom: 0px
+
+        p
+          font-size: 1.25em
+          color: white
+          text-align: center
+
+      #links
+        position: relative
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        margin-top: 75px
+        left: 50%
+        transform: translateX(-50%)
+        width: 40%
+        padding-bottom: 150px
+
+        @media(max-width: 1500px)
+          width: 60%
+
+        @media(max-width: 1000px)
+          width: 70%
+
+        @media(max-width: 800px)
+          width: 80%
+
+        @media(max-width: 700px)
+          width: 85%
+
+        @media(max-width: 650px)
+          display: none
+
+        a
+          color: white
+          font-size: 1.25em
+          text-align: center
+
+      #copyright
+        position: absolute
+        margin-top: -125px
+        left: 50%
+        transform: translateX(-50%)
+
+        @media(max-width: 650px)
+          position: relative
+          left: 50%
+          margin-top: 100px
+          transform: translateX(-50%)
+          text-align: center
+          padding-bottom: 50px
+
+        p
+          font-size: 1.75em
+          color: lightgray
