@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139231141-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139231141-1');
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <script src="https://kit.fontawesome.com/c7caeb49e9.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/index.min.css">
+    <title>#TeamTrees</title>
+  </head>
+  <body>
+    <section id="home">
+      <img src="./images/home2.jpg" alt="Sunset in rainforest.">
+      <div id="hashtag">
+        <h1 id="word1">#Team</h1>
+        <h1 id="word2">Trees</h1>
+      </div>
+      <div id="quote">
+        <h3>"The best time to plant a tree is twenty years ago. The second best time is now."</h3>
+        <h5>~ Chinese proverb</h5>
+      </div>
+      <a href="#goal" id="scroll">
+        <i id="icon1" class="fas fa-chevron-down"></i>
+        <i id="icon2" class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    <section id="goal">
+      <div id="img-container">
+        <img src="./images/goal2.jpg" alt="Looking up in forest.">
+        <div id="overlay"></div>
+      </div>
+      <div id="text-container">
+        <h3>Our Goal</h3>
+        <p>Help us plant 20 million trees around the globe by January 1st, 2020. For every dollar you donate, one tree will be planted in a forest of high need around the globe. It's that simple!</p>
+        <a href="#donate">Donate</a>
+      </div>
+    </section>
+    <section id="donate">
+      <div id="donate-container">
+        <h3>Join Team Trees</h3>
+        <p>$1 Plants a tree</p>
+        <div id="options">
+          <div class="option" id="5-trees" onclick="donate('5-trees')">
+            <p>5 Trees</p>
+          </div>
+          <div class="option" id="20-trees" onclick="donate('20-trees')">
+            <p>20 Trees</p>
+          </div>
+          <div class="option" id="50-trees" onclick="donate('50-trees')">
+            <p>50 Trees</p>
+          </div>
+          <div class="option" id="100-trees" onclick="donate('100-trees')">
+            <p>100 Trees</p>
+          </div>
+          <div class="option" id="other" onclick="donate('other')">
+            <input type="number" min="0" max="100000" placeholder="Other amount">
+          </div>
+        </div>
+        <button type="button" onclick="window.open('https://teamtrees.org', '_blank')">Next</button>
+      </div>
+      <div id="img-container">
+        <img src="./images/donate.jpg" alt="Person holding tree plant.">
+        <div id="overlay"></div>
+      </div>
+    </section>
+    <section id="leaderboard">
+      <div id="container">
+        <h3 id="h3">Most Trees</h3>
+        <div id="donations">
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>MrBeast</h3>
+                <div class="amount">
+                  <p>100,002 Trees</p>
+                </div>
+              </div>
+              <p>Someone PLEASE Take This Spot :)</p>
+              <h5>2019-10-26 17:45:00</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Alan Walker</h3>
+                <div class="amount">
+                  <p>100,001 Trees</p>
+                </div>
+              </div>
+              <p>I want to plant one of the trees!</p>
+              <h5>2019-10-26 10:49:18</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>MrBeast</h3>
+                <div class="amount">
+                  <p>100,000 Trees</p>
+                </div>
+              </div>
+              <p>I dare you to take this space from me :)</p>
+              <h5>2019-10-25 21:00:00</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Mark Rober</h3>
+                <div class="amount">
+                  <p>50,000 Trees</p>
+                </div>
+              </div>
+              <p>So stoked to be part of this! #TeamTrees</p>
+              <h5>2019-10-25 21:00:00</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Jeffree Star</h3>
+                <div class="amount">
+                  <p>50,000 Trees</p>
+                </div>
+              </div>
+              <p>Let's all help change the world.</p>
+              <h5>2019-10-26 02:31:47</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Lachlan</h3>
+                <div class="amount">
+                  <p>15,000 Trees</p>
+                </div>
+              </div>
+              <p>Deforestation is unepic</p>
+              <h5>2019-10-26 10:18:05</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Ninja and Jessica</h3>
+                <div class="amount">
+                  <p>15,000 Trees</p>
+                </div>
+              </div>
+              <p>Let's save the planet.</p>
+              <h5>2019-10-26 16:21:09</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>WILDCAT</h3>
+                <div class="amount">
+                  <p>15,000 Trees</p>
+                </div>
+              </div>
+              <p>15000 trees so we don't die.</p>
+              <h5>2019-10-26 20:45:41</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Simply Nailogical</h3>
+                <div class="amount">
+                  <p>12,000 Trees</p>
+                </div>
+              </div>
+              <p>I'm afraid of change... climate change</p>
+              <h5>2019-10-26 17:29:22</h5>
+            </div>
+          </div>
+          <div class="donation">
+            <img src="./images/most-trees.png" alt="Most trees image">
+            <div class="text">
+              <div class="top">
+                <h3>Doctor Mike </h3>
+                <div class="amount">
+                  <p>11,111 Trees</p>
+                </div>
+              </div>
+              <p>Keep the world Happy & Healthy! #peewoop</p>
+              <h5>2019-10-26 17:37:09</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="social-media">
+      <div id="container">
+        <h3>#TeamTrees Social</h3>
+        <div id="tweets">
+          <div class="lines" id="line1">
+            <a href="https://twitter.com/MrBeastYT/status/1188964671149068288" target="_blank" class="tweet">
+              <img id="tweet-img" src="./images/tweet1.png" alt="Image of tweet">
+              <p>Hi @ElonMusk. Let's plant some trees! #TeamTrees!!!</p>
+              <p class="date">about 7 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo1.png" alt="Image of publishers logo">
+                <h5>TeamTrees</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="https://twitter.com/KittyPlays/status/1188947577007247360" target="_blank" class="tweet">
+              <p>“I always love seeing the internet creating positive impact! Tomorrow's stream we will be putting all donations towards #TeamTrees! Thank you @MrBeastYT for creating such a great movement out of the communities meme 😂 $1 donated = 1 tree planted! 🌲”</p>
+              <p class="date">about 8 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo3.jpg" alt="Image of publishers logo">
+                <h5>KittyPlays</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="https://teamtrees.org/" target="_blank" class="tweet">
+              <img id="tweet-img" src="./images/tweet5.png" alt="Image of tweet">
+              <p>SHOUTOUT TO THE TREES AND TO EACH AND EVERY ONE OF YOU AMAZING HUMANS!!! Keep spreading the word! We can do this!</p>
+              <p class="date">about 11 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo1.png" alt="Image of publishers logo">
+                <h5>TeamTrees</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="" class="tweet">
+              <img id="tweet-img" src="./images/tweet7.jpg" alt="Image of tweet">
+              <p>MrBeast and Mark Rober take a break from planting 20M trees</p>
+              <p class="date">about 13 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo7.jpg" alt="Image of publishers logo">
+                <h5>ZachaTree</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+          <div class="lines" id="line1">
+            <a href="https://twitter.com/hashtag/TeamTrees" target="_blank" class="tweet">
+              <p>“Welcome to #TeamTrees Elon 😎😎”</p>
+              <p class="date">about 7 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo2.png" alt="Image of publishers logo">
+                <h5>Mark Rober</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/p/B4LTZwgHOLE/" target="_blank" class="tweet">
+              <img id="tweet-img" src="./images/tweet4.jfif" alt="Image of tweet">
+              <p>#TeamTrees</p>
+              <p class="date">about 9 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo4.png" alt="Image of publishers logo">
+                <h5>CillerKube</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="https://twitter.com/angry__snail/status/1188881126955323392" target="_blank" class="tweet">
+              <p>How to grow a tree, step by step guide :D Aight, I'll keep this short - @arborday wantss to plant 20 million trees by 2020 but they need our help to do so. Go to TeamTrees.org and donate! One dollar = one tree. Trees = good #pixelart #ドット絵 #TeamTrees</p>
+              <p class="date">about 13 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo6.png" alt="Image of publishers logo">
+                <h5>Angry__snail</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="https://twitter.com/EvanAndKatelyn/status/1188873118271639554" target="_blank" class="tweet">
+              <img id="tweet-img" src="./images/tweet8.jpg" alt="Image of tweet">
+              <p>e're over 1/4 of the way to our goal (5.6 out of 20 million trees) in 4 days 🙌😊 Thanks @MrBeastYT for starting this crazy idea to bring so many people together to do something positive and thank YOU all for giving back to the planet ❤️🌲</p>
+              <p class="date">about 13 hours ago</p>
+              <div class="publisher">
+                <img src="./images/tweet-logo8.jpg" alt="Image of publishers logo">
+                <h5>EvanAndKatelyn</h5>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <img src="./images/footer1.jpg" alt="Inside forest">
+      <div id="hashtag">
+        <a href="#home">
+          <h1 id="word1">#Team</h1>
+          <h1 id="word2">Trees</h1>
+        </a>
+      </div>
+      <div id="links">
+        <a href="">Faq</a>
+        <a href="">Contact us</a>
+        <a href="">Press Inquiries</a>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="./scripts/index.js"></script>
+</html>
