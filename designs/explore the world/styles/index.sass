@@ -356,52 +356,61 @@ html, body
           left: 50%
           transform: translateX(-50%)
 
-        h5
-          position: relative
-          font-size: 1.1em
-          text-align: center
-          text-transform: uppercase
+          h5
+            position: relative
+            font-size: 1.1em
+            text-align: center
+            text-transform: uppercase
 
-          @media(max-width: 1500px)
-            font-size: 1em
+            @media(max-width: 1500px)
+              font-size: 1em
 
-          @media(max-width: 1000px)
-            font-size: 0.9em
+            @media(max-width: 1000px)
+              font-size: 0.9em
 
-        .line
-          position: absolute
-          width: 25%
-          height: 1px
-          top: 50%
-          transform: translate(-50%, -50%)
-          background-color: gray
+            @media(max-width: 500px)
+              font-size: 0.8em
 
-          @media(max-width: 1500px)
-            width: 20%
+            @media(max-width: 400px)
+              font-size: 0.7em
 
-          @media(max-width: 1250px)
-            width: 17.5%
+            @media(max-width: 350px)
+              font-size: 0.6em
 
-          @media(max-width: 1000px)
+          .line
+            position: absolute
             width: 25%
+            height: 1px
+            top: 50%
+            transform: translate(-50%, -50%)
+            background-color: gray
 
-        #line1
-          left: 20%
+            @media(max-width: 1500px)
+              width: 20%
 
-          @media(max-width: 1500px)
-            left: 17.5%
+            @media(max-width: 1250px)
+              width: 17.5%
 
-          @media(max-width: 1000px)
+            @media(max-width: 1000px)
+              width: 25%
+
+          #line1
             left: 20%
 
-        #line2
-          left: 80%
+            @media(max-width: 1500px)
+              left: 17.5%
 
-          @media(max-width: 1500px)
-            left: 82.5%
+            @media(max-width: 1000px)
+              left: 20%
 
-          @media(max-width: 1000px)
+          #line2
             left: 80%
+
+            @media(max-width: 1500px)
+              left: 82.5%
+
+            @media(max-width: 1000px)
+              left: 80%
 
         #text
           position: absolute
@@ -976,7 +985,7 @@ html, body
               width: auto
               margin: 0px auto
               bottom: 11%
-              left: -35px
+              left: -15px
               transform: rotateZ(-90deg)
               color: #303030
               font-size: 0.8em
@@ -1138,6 +1147,10 @@ html, body
               width: 125px
               font-size: 0.8em
 
+              @media(max-width: 450px)
+                left: -55px
+                font-size: 0.75em
+
             p:hover
               cursor: pointer
 
@@ -1169,6 +1182,15 @@ html, body
               font-family: 'Merriweather', serif
               font-size: 1.75em
 
+              @media(max-width: 800px)
+                font-size: 1.5em
+
+              @media(max-width: 600px)
+                font-size: 1.25em
+
+              @media(max-width: 500px)
+                font-size: 1.1em
+
             h3:hover
               cursor: pointer
 
@@ -1179,6 +1201,15 @@ html, body
               left: 50%
               transform: translateX(-50%)
               font-size: 1.1em
+
+              @media(max-width: 800px)
+                font-size: 0.9em
+
+              @media(max-width: 600px)
+                font-size: 0.8em
+
+              @media(max-width: 400px)
+                font-size: 0.7em
 
             p:hover
               cursor: pointer
